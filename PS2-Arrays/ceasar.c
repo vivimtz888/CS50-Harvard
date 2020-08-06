@@ -33,6 +33,8 @@ int main(int argc, string argv[])
     else if (argc < 2 || argc > 2)
     {
         printf("Usage: ./caesar key\n");
+        //retunr from main a value of 1 (which tends to signify an error)
+        return 1;
     }
 
     //4. output plaintext: (without a new line) printf
@@ -80,9 +82,8 @@ int main(int argc, string argv[])
         }
 
     }
-    //printf a new line and return 0 from main
+    //printf a new line
     printf("\n");
-    return 0;
 
 
 
